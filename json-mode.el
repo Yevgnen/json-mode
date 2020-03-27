@@ -116,7 +116,7 @@ This function calls `json-mode--update-auto-mode' to change the
   "Level one font lock.")
 
 ;;;###autoload
-(define-derived-mode json-mode javascript-mode "JSON"
+(define-derived-mode json-mode nil "JSON"
   "Major mode for editing JSON files"
   (set (make-local-variable 'font-lock-defaults) '(json-font-lock-keywords-1 t)))
 
